@@ -1,0 +1,25 @@
+// Learning Processing
+// Daniel Shiffman
+// http://www.learningprocessing.com
+
+// Example 6-3: While loop
+
+function setup() {
+  createCanvas(640,360);
+  background(255);
+
+  var y = 80;       // Vertical location of each line
+  var x = 50;       // Initial horizontal location for first line
+  var spacing = 10; // How far apart is each line
+  var len = 20;     // Length of each line
+
+  // A variable to mark where the legs end.
+  var endLegs = 150; 
+  stroke(0);
+
+  // Draw each leg inside a while loop.
+  while (x <= endLegs) { 
+    line (x,y,x,y + len);
+    x = x + spacing;
+  }
+}
