@@ -34,7 +34,7 @@ function bounce() {
   }
 }
 
-function drawCar(var x, var y, var thesize, color c) {
+function drawCar(x, y, thesize, c) {
   var offset = thesize / 4;
   rectMode(CENTER);
   stroke(0);

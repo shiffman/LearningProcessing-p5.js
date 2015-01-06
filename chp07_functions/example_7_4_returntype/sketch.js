@@ -26,7 +26,7 @@ function draw() {
   rect(width/2,height/2,width/2 - 1,height/2 - 1);
 }
 
-var distance(var x1, var y1, var x2, var y2) {
+function distance(x1, y1, x2, y2) {
   var dx = x1 - x2;
   var dy = y1 - y2;
   var d = sqrt(dx*dx + dy*dy);

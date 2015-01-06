@@ -26,11 +26,11 @@ function draw() {
   // pass in a color to drawZoog
   // function for eye's color
   var d = dist(x,y,mouseX,mouseY);
-  color c = color(d);
+  var c = color(d);
   drawZoog(c);
 }
 
-function jiggleZoog(var speed) {
+function jiggleZoog(speed) {
   // Change the x and y location of Zoog randomly
   x = x + random( - 1,1)*speed;
   y = y + random( - 1,1)*speed;
@@ -39,7 +39,7 @@ function jiggleZoog(var speed) {
   y = constrain(y,0,height);
 }
 
-function drawZoog(color eyeColor) {
+function drawZoog(eyeColor) {
   // Set ellipses and rects to CENTER mode
   ellipseMode(CENTER);
   rectMode(CENTER);

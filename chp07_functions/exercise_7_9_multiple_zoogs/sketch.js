@@ -17,7 +17,7 @@ function draw() {
 }
 
 
-function drawZoog(var x, var y, var w, var h, var eyeSize) {
+function drawZoog(x, y, w, h, eyeSize) {
   // Draw Zoog's body
   stroke(0);
   fill(175);
