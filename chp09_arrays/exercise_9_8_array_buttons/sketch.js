@@ -12,7 +12,7 @@
 // first appears.  
 
 // An array of buttons
-Button[] buttons = new Button[6];
+var buttons = new Array(6);
 
 function setup() {
   createCanvas(600, 200);
@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(175);
   // Show all the buttons
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].display();

@@ -5,14 +5,14 @@
 // Example 9-10: Interactive stripes
 
 // An array of stripes
-Stripe[] stripes = new Stripe[10];
+var stripes = [];
 
 function setup() {
   createCanvas(640,360);
   
   // Initialize all Stripe objects
-  for (var i = 0; i < stripes.length; i ++ ) {
-    stripes[i] = new Stripe();
+  for (var i = 0; i < 10; i ++ ) {
+    stripes.push(new Stripe());
   }
 }
 

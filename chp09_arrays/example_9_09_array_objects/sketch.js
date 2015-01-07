@@ -4,18 +4,18 @@
 
 // Example 9-9: An array of Car objects
 
-Car[] cars = new Car[180]; // An array of 100 Car objects!
+var cars = [];
 
 function setup() {
   createCanvas(640,360);
-  for (var i = 0; i < cars.length; i ++ ) { // Initialize each Car using a for loop.
+  for (var i = 0; i < 100; i++) { // Initialize each Car using a for loop.
     cars[i] = new Car(color(i*2),0,i*2,i/20.0); 
   }
 }
 
 function draw() {
   background(255);
-  for (var i = 0; i < cars.length; i ++ ) { // Run each Car using a for loop.
+  for (var i = 0; i < cars.length; i++) { // Run each Car using a for loop.
     cars[i].move();
     cars[i].display();
   }

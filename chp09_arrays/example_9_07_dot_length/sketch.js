@@ -4,12 +4,12 @@
 
 // Example 9-7: An array operation using dot length
 
-float[] values = new float[100];
+var values = new Array(1000);
 
-for (var i = 0; i < values.length; i++ ) {
+for (var i = 0; i < values.length; i++) {
   values[i] = random(0,10);
 }
 
-for (var i = 0; i < values.length; i ++ ) {
+for (var i = 0; i < values.length; i++) {
   values[i] = 0;
 }  

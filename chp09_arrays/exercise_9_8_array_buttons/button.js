@@ -7,45 +7,34 @@
 // of different sizes and locations using an array. Before writing the main program, sketch out the 
 // Button class. Assume the button is off  when it first appears.  
 
-// Button class
-
-class Button  {    
-
+// Constructor initializes all variables
+function Button(tempX, tempY, tempW, tempH)  {    
   // Button location and size
-  var x;   
-  var y;   
-  var w;   
-  var h;   
+  this.x  = tempX;   
+  this.y  = tempY;   
+  this.w  = tempW;   
+  this.h  = tempH;   
   // Is the button on or off?
-  boolean on;  
+  // Button always starts as off
+  this.on = false;    
 
-  // Constructor initializes all variables
-  Button(var tempX, var tempY, var tempW, var tempH)  {    
-    x  = tempX;   
-    y  = tempY;   
-    w  = tempW;   
-    h  = tempH;   
-    on = false;  // Button always starts as off
-  }    
-
-  function click(var mx, var my) {
-    // Check to see if a povar is inside the rectangle
-    if (mx > x && mx < x + w && my > y && my < y + h) {
-      on = !on;
+  this.click = function(mx, my) {
+    // Check to see if a point is inside the rectangle
+    if (mx > this.x && mx < this.x + this.w && my > this.y && my < this.y + this.h) {
+      this.on = !this.on;
     }
   }
 
   // Draw the rectangle
-  function display() {
+  this.display = function() {
     rectMode(CORNER);
     stroke(0);
     // The color changes based on the state of the button
-    if (on) {
+    if (this.on) {
       fill(175);
     } else {
       fill(0);
     }
-    rect(x,y,w,h);
-  }
-  
+    rect(this.x,this.y,this.w,this.h);
+  } 
 } 

@@ -5,7 +5,7 @@
 // Exercise 9-6: Assuming an array of 10 integers, 
 // that is,
 
-int[] nums = { 5, 4, 2, 7, 6, 8, 5, 2, 8, 14 };
+var nums = [ 5, 4, 2, 7, 6, 8, 5, 2, 8, 14 ];
 
 // write code to perform the following array operations (Note that the number of clues vary, just because a [____] is not explicitly written in does not mean there should not be brackets).
 

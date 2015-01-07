@@ -14,18 +14,18 @@
 // section.)
 
 // Two snake objects (this would be better as an array!)
-Snake s0;
-Snake s1;
+var s0;
+var s1;
 
 function setup() {
-  createCanvas(400,200);
+  createCanvas(640,360);
   // Initialize
   s0 = new Snake(50);
   s1 = new Snake(25);
 }
 
 function draw() {
-  background(255);
+  background(51);
   
   // Update and display
   s0.update(mouseX-30,mouseY);
