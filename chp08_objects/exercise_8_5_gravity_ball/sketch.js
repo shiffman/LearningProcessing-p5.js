@@ -7,23 +7,22 @@
 // Include two instances of a Ball object.
 
 // Two ball objects
-Ball ball1;
-Ball ball2;
+var ball1;
+var ball2;
 
 // Global gravity variable
 var gravity = 0.1;  
 
 function setup() { 
-  createCanvas(200,200); 
-  smooth();
+  createCanvas(640,360); 
   
   // Create ball objects
-  ball1 = new Ball(50,0,16);
-  ball2 = new Ball(100,50,32);
+  ball1 = new Ball(150,0,16);
+  ball2 = new Ball(350,50,32);
 } 
 
 function draw() { 
-  background(255); 
+  background(51); 
   
   // Display ball objects
   ball1.display();
