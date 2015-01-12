@@ -26,15 +26,19 @@ function setup() {
 }
 
 function draw() {
+  video.loadPixels();
+
   // A new x,y location is picked as the current (x,y) plus or minus a random value. 
   // The new location is constrained within the window's pixels.  
   var newx = constrain(x + random(-20, 20), 0, width);
   var newy = constrain(y + random(-20, 20), 0, height);
   
-  video.loadPixels();
-  var c = video.get(newx, newy);
+  var loc = (floor(newx) + floor(newy) * width) * 4;
+  var r = video.pixels[loc];
+  var g = video.pixels[loc + 1];
+  var b = video.pixels[loc + 2];
   // Draw a line from x,y to the newx,newy
-  stroke(c);
+  stroke(r,g,b);
   strokeWeight(4);
   line(x, y, newx, newy);
 
