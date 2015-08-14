@@ -14,7 +14,7 @@ var ball2;
 var gravity = 0.1;  
 
 function setup() { 
-  createCanvas(640,360); 
+  createCanvas(480, 270); 
   
   // Create ball objects
   ball1 = new Ball(150,0,16);

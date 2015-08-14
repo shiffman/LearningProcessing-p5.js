@@ -4,7 +4,7 @@
 
 // Example 5-3: Rollovers
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

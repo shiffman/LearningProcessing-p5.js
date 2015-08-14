@@ -15,7 +15,7 @@ var speed = 0;   // speed of square
 var gravity = 0.1;  
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 
 }
 

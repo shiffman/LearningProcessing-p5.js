@@ -17,7 +17,7 @@ var eyeG;
 var eyeB;
 
 function setup() {
-  createCanvas(640,360);        // Set the size of the window
+  createCanvas(480, 270);        // Set the size of the window
   // Feature #1.  zoogX and zoogY are initialized based on the size of the window.  
   // Note we cannot initialize these variables before the createCanvas() function is called 
   // since we are using the built-in variables width and height.

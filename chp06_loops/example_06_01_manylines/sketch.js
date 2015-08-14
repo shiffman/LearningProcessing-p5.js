@@ -5,7 +5,7 @@
 // Example 6-1: Many lines 
 
 function setup() {
-  createCanvas(640,360);  
+  createCanvas(480, 270);  
   background(255);  
   // Legs  
   stroke(0);  

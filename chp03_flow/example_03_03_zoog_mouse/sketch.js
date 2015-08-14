@@ -4,7 +4,7 @@
 
 // Example 3-3: Zoog as dynamic sketch with variation
 function setup() {
-  createCanvas(640,360);  // Set the size of the window
+  createCanvas(480, 270);  // Set the size of the window
 }
 
 function draw() {

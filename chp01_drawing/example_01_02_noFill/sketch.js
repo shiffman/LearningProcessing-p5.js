@@ -4,7 +4,7 @@
 
 // Example 1-2: noFill
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
   background(255);
 
   // noFill() leaves the shape with only an outline.

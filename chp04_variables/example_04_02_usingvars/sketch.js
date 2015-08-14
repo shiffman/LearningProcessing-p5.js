@@ -9,7 +9,7 @@ var circleX = 100;
 var circleY = 100;
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

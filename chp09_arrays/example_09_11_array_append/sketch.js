@@ -8,7 +8,7 @@ var balls = []; // We start with an array with just one element.
 var gravity = 0.1;
 
 function setup() {
-  createCanvas(640,360)
+  createCanvas(480, 240)
   // Initialize ball index 0
   balls.push(new Ball(50,0,32));
 }

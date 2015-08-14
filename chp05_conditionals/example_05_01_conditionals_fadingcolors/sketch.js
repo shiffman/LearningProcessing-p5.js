@@ -10,7 +10,7 @@ var g = 0;
 var b = 0;
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

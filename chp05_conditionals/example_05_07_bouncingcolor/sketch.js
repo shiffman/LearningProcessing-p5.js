@@ -14,7 +14,7 @@ var c1dir = 0.5;
 var c2dir = -0.5; 
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

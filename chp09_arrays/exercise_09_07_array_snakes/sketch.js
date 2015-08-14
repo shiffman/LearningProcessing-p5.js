@@ -18,7 +18,7 @@ var s0;
 var s1;
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
   // Initialize
   s0 = new Snake(50);
   s1 = new Snake(25);

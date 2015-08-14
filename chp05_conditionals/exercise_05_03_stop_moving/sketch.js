@@ -13,7 +13,7 @@
 var x = 0;
 
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(480, 270);
 }
 
 function draw() {

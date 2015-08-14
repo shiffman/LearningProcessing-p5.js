@@ -24,7 +24,7 @@ strokeWeight( ) in the Processing reference.
 */
 
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(480, 270);
   background(255);
 }
 

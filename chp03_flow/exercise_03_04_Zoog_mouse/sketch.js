@@ -6,7 +6,7 @@
 // rest of its body moves with the mouse.
 
 function setup() {
-  createCanvas(640, 360);  // Set the size of the window
+  createCanvas(480, 270);  // Set the size of the window
 }
 
 function draw() {

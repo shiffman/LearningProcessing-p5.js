@@ -5,7 +5,7 @@
 // Example 1-1: stroke and fill
 
 function setup() {
-  createCanvas(480, 240);
+  createCanvas(480, 270);
   background(255);
   stroke(0); 
   fill(150);

@@ -8,7 +8,7 @@
 var stripes = [];
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
   
   // Initialize all Stripe objects
   for (var i = 0; i < 10; i ++ ) {

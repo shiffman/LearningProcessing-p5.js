@@ -9,7 +9,7 @@
 
 function setup() {
   // Set the size of the window
-  createCanvas(640, 360);
+  createCanvas(480, 270);
 }
 
 // draw() loops continuously until you close the sketch window.

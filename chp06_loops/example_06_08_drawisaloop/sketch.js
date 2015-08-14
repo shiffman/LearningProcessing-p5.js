@@ -8,7 +8,7 @@
 var y = 0;
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
   background(255);
   // Slowing down the frame rate so we can easily see the effect.
   frameRate(5); 

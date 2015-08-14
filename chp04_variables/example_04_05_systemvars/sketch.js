@@ -4,7 +4,7 @@
 
 // Example 4-5: Using system variables
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

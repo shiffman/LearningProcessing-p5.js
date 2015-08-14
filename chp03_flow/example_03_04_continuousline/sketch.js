@@ -4,7 +4,7 @@
 
 // Example 3-4: Drawing a continuous line
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(480, 270);
   background(255);
 }
 

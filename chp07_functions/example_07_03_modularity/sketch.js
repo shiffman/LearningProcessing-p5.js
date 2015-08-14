@@ -10,7 +10,7 @@ var speed = 1;
 
 // Setup does not change
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

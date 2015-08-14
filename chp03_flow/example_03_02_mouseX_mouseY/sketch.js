@@ -5,7 +5,7 @@
 // Example 3-2: mouseX and mouseY
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

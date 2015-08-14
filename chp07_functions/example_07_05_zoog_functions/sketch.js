@@ -11,7 +11,7 @@ var h = 60;
 var eyeSize = 16;
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

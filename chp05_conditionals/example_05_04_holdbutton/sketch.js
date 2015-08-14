@@ -11,7 +11,7 @@ var w = 100;
 var h = 75;
 
 function setup() {
-  createCanvas(640,360); 
+  createCanvas(480, 270); 
 }
 
 function draw() {

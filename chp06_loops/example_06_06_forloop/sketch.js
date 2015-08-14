@@ -5,7 +5,7 @@
 // Example 6-6: Legs with a for loop
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
   background(255);
 
   var y = 80;       // Vertical location of each line

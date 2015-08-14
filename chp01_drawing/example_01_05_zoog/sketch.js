@@ -4,7 +4,7 @@
 
 // Example 1-5: Zoog
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
   background(255);
   ellipseMode(CENTER);
   rectMode(CENTER); 

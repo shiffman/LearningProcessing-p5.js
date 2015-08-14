@@ -12,7 +12,7 @@ var eyeSize = 16;
 var speed = 1;
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
 }
 
 function draw() {

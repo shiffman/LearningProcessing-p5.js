@@ -7,7 +7,7 @@
 var car; // Declare car object as a globle variable.
 
 function setup() {
-  createCanvas(640,360);
+  createCanvas(480, 270);
   // Initialize Car object
 
   car = {
