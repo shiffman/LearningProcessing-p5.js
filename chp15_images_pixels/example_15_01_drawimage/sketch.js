@@ -9,7 +9,7 @@ var img;
 
 function preload() {
   // Make a new instance of a PImage by loading an image file
-  img = loadImage("data/mysummervacation.jpg");  
+  img = loadImage("data/runde_bird_cliffs.jpg");  
 }
 
 function setup() {
