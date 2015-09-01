@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(400, 400);
   destination = createImage(source.width, source.height, RGB);
 
   // Temporary-ish fix for retina machines
