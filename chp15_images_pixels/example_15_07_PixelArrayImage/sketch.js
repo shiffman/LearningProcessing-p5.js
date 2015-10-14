@@ -11,7 +11,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(400, 400);
+  
+  // Temporary-ish fix for retina machines
+  devicePixelScaling(false);
 }
 
 function draw() {
