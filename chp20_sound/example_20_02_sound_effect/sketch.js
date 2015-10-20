@@ -2,6 +2,8 @@
 // Daniel Shiffman
 // http://www.learningprocessing.com
 
+// Example 20-2: Simple Sound Playback
+
 // A sound file object
 var dingdong;
 

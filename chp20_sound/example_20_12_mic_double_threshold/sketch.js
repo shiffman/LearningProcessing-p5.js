@@ -2,7 +2,7 @@
 // Daniel Shiffman
 // http://www.learningprocessing.com
 
-// Example 20-1: Simple Sound Playback
+// Example 20-12: mic double threshold
 
 // A Sample object (for a sound)
 var input;

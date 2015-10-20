@@ -2,7 +2,7 @@
 // Daniel Shiffman
 // http://www.learningprocessing.com
 
-// Example 20-4: Manipulating sound (with Sonia)
+// Example 20-8: Noise
 
 var noise;
 
