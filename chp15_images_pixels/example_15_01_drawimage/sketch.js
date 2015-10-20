@@ -18,6 +18,8 @@ function setup() {
 
 function draw() {
   background(0);
+
+  scale(-1,1);
   //The image() function displays the image at a location-in this case the point (0,0).
-  image(img, 0, 0);
+  image(img, 0, 0, -img.width, 0);
 }
