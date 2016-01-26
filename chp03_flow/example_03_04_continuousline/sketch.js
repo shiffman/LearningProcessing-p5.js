@@ -12,5 +12,7 @@ function draw() {
   stroke(0);
   
   // Draw a line from previous mouse location to current mouse location.
+  if (pmouseX!=0 && pmouseY!=0) {  //Now there is no default line from left upper corner of browser to current mouse location.
   line(pmouseX, pmouseY, mouseX, mouseY);
+}
 }
