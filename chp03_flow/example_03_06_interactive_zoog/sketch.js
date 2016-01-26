@@ -17,7 +17,9 @@ function draw() {
   // Set ellipses and rects to CENTER mode
   ellipseMode(CENTER);
   rectMode(CENTER); 
-  
+  //Eliminating corner draw bug
+  if(mouseX!=0 && mouseY!=0)    
+  {
   // Draw Zoog's body
   stroke(0);
   fill(175);
@@ -39,6 +41,7 @@ function draw() {
   // The legs are drawn according to the mouse location and the previous mouse location.
   line(mouseX-10,mouseY+50,pmouseX-10,pmouseY+60);
   line(mouseX+10,mouseY+50,pmouseX+10,pmouseY+60);
+}
 }
 
 function mousePressed() {
