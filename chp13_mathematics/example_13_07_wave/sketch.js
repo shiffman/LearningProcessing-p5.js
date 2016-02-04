@@ -1,0 +1,32 @@
+// Learning Processing
+// Daniel Shiffman
+// http://www.learningprocessing.com
+
+// Example 13-7: Wave
+
+// Starting angle
+var theta = 0.0;
+
+function setup() {
+  createCanvas(480, 270);
+}
+
+function draw() {
+  background(255);
+
+  // Increment theta (try different values for "angular velocity " here)
+  theta += 0.02;
+  noStroke();
+  fill(0);
+  var angle = theta;
+
+  // A for loop is used to draw all the points along a sine wave (scaled to the pixel dimension of the window).
+  for (var x = 0; x <= width; x += 10) {
+    // Calculate y value based off of sine function
+    var y = map(sin(angle), -1, 1, 0, height);
+    // Draw an ellipse
+    ellipse(x, y, 16, 16);
+    // Increment angle
+    angle += 0.1;
+  }
+}
