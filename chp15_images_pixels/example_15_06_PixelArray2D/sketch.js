@@ -6,6 +6,7 @@
 
 function setup() {
   createCanvas(200, 200);
+  pixelDensity(1);
   loadPixels();
 
   // Two loops allow us to visit every column (x) and every row (y).

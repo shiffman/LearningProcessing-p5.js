@@ -32,6 +32,6 @@ function draw() {
   
   // Back to shapes! Instead of setting a pixel, we use the color 
   // from a pixel to draw a circle.
-  fill(r,g,b,100);
-  ellipse(x,y,pointillize,pointillize); 
+  fill(r, g, b, 100);
+  ellipse(x, y, pointillize, pointillize); 
 }

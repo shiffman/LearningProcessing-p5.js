@@ -14,7 +14,7 @@ function setup() {
   createCanvas(400, 400);
   
   // Temporary-ish fix for retina machines
-  devicePixelScaling(false);
+  pixelDensity(1);
 }
 
 function draw() {

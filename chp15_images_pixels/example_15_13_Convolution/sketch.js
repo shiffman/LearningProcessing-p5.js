@@ -17,14 +17,14 @@ function preload() {
 
 function setup() {
   createCanvas(400, 400);
-  devicePixelScaling(false);
+  pixelDensity(1);
 }
 
 function draw() {
   
   // We're only going to process a portion of the image
   // so let's set the whole image as the background first
-  image(img,0,0);
+  image(img, 0, 0);
   
   // In this example we are only processing a section of the image-an 80 x 80 rectangle around the mouse location.  
   var xstart = constrain(mouseX-w/2,0,img.width); 
@@ -50,6 +50,7 @@ function draw() {
     }
   }
   updatePixels();
+
   stroke(0);
   noFill();
   rect(xstart,ystart,w,w);

@@ -16,9 +16,10 @@ function setup() {
 
 function draw() {
   // Draw the image
-  image(img,0,0);
+  image(img, 0, 0);
   // Filter the window with a threshold effect
   // 0.5 means threshold is 50% brightness
-  filter("threshold",0.5);
+  filter("threshold", 0.5);
+  noLoop();
 }
 

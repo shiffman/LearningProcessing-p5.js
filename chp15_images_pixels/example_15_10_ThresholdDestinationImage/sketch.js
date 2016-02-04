@@ -16,7 +16,7 @@ function setup() {
   destination = createImage(source.width, source.height, RGB);
 
   // Temporary-ish fix for retina machines
-  devicePixelScaling(false);
+  pixelDensity(1);
 }
 
 function draw() {
@@ -52,4 +52,5 @@ function draw() {
   destination.updatePixels();
   // Display the destination
   image(destination,0,0);
+  noLoop();
 }
