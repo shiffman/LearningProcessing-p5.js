@@ -15,7 +15,7 @@ function setup() {
   // Start x and y in the center
   x = width/2;
   y = height/2;
-  devicePixelScaling(false);
+  pixelDensity(1);
   video = createCapture(VIDEO);
   video.size(width,height);
   // The above function actually makes a separate video

@@ -8,7 +8,7 @@ var video;
 
 function setup() {
   createCanvas(320, 240);
-  devicePixelScaling(false);
+  pixelDensity(1);
   video = createCapture(VIDEO);
   // The above function actually makes a separate video
   // element on the page.  The line below hides it since we are

@@ -11,7 +11,7 @@ var trackColor;
 
 function setup() {
   createCanvas(320, 240);
-  devicePixelScaling(false);
+  pixelDensity(1);
   video = createCapture(VIDEO);
   video.size(width,height);
   // The above function actually makes a separate video

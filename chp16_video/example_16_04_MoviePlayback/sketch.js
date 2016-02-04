@@ -6,7 +6,6 @@
 
 function setup() {
   createCanvas(320, 240);
-  devicePixelScaling(false);
   video = createVideo('data/cat.mov');
   video.play();
   // The above function actually makes a separate video

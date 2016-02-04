@@ -14,9 +14,9 @@ var threshold = 20;
 
 function setup() {
   createCanvas(320, 240);
-  devicePixelScaling(false);
+  pixelDensity(1);
   video = createCapture(VIDEO);
-  video.size(width,height);
+  video.size(width, height);
   video.hide();
 
   // Create an empty image the same size as the video
@@ -25,9 +25,6 @@ function setup() {
 
 function draw() {
   
-  // Draw the video
-  image(video,0,0);
-
   // We are going to look at everything's pixels
   loadPixels();
   video.loadPixels();
@@ -73,6 +70,8 @@ function draw() {
       }
     }
   }
+
+  updatePixels();
 }
 
 
@@ -83,9 +82,6 @@ function mousePressed() {
   // x, y, width, and height of region to be copied from the source
   // x, y, width, and height of copy destination
   video.loadPixels();
-  backgroundImage.loadPixels();
   backgroundImage.copy(video, 0, 0, video.width, video.height, 0, 0, video.width, video.height);
-  backgroundImage.updatePixels();
-  console.log(backgroundImage.pixels[10000]);
 }
 
