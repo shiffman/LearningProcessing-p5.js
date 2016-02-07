@@ -16,7 +16,6 @@ function preload() {
 
 function setup() {
   createCanvas(480, 270);
-  song.play();
   song.loop();
 
   // create a new Amplitude analyzer

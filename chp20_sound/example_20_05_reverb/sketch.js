@@ -15,7 +15,6 @@ function preload() {
 function setup() {
   createCanvas(200, 200);
 
-
   reverb = new p5.Reverb();
   // Connect soundFile to reverb, process w/
   // 3 second reverbTime, decayRate of 2%
