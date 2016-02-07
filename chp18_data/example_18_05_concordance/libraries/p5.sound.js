@@ -1147,7 +1147,7 @@ soundfile = function () {
   };
   /**
    * Set the stereo panning of a p5.sound object to
-   * a floating point number between -1.0 (left) and 1.0 (right).
+   * a floating povar number between -1.0 (left) and 1.0 (right).
    * Default is 0.0 (center).
    *
    * @method pan
@@ -2391,7 +2391,7 @@ fft = function () {
    *  @param {Number} [bins]    Must be a power of two between
    *                             16 and 1024. Defaults to 1024.
    *  @param {Number} [scale]    If "dB," returns decibel
-   *                             float measurements between
+   *                             var measurements between
    *                             -140 and 0 (max).
    *                             Otherwise returns integers from 0-255.
    *  @return {Array} spectrum    Array of energy (amplitude/volume)
@@ -2563,23 +2563,23 @@ fft = function () {
     }
     this.analyser.smoothingTimeConstant = s;
   };
-  // helper methods to convert type from float (dB) to int (0-255)
-  var freqToFloat = function (fft) {
+  // helper methods to convert type from var (dB) to var (0-255)
+  var freqTovar = function (fft) {
     if (fft.freqDomain instanceof Float32Array === false) {
       fft.freqDomain = new Float32Array(fft.analyser.frequencyBinCount);
     }
   };
-  var freqToInt = function (fft) {
+  var freqTovar = function (fft) {
     if (fft.freqDomain instanceof Uint8Array === false) {
       fft.freqDomain = new Uint8Array(fft.analyser.frequencyBinCount);
     }
   };
-  var timeToFloat = function (fft) {
+  var timeTovar = function (fft) {
     if (fft.timeDomain instanceof Float32Array === false) {
       fft.timeDomain = new Float32Array(fft.analyser.frequencyBinCount);
     }
   };
-  var timeToInt = function (fft) {
+  var timeTovar = function (fft) {
     if (fft.timeDomain instanceof Uint8Array === false) {
       fft.timeDomain = new Uint8Array(fft.analyser.frequencyBinCount);
     }
@@ -2590,7 +2590,7 @@ var Tone_core_Tone;
 Tone_core_Tone = function () {
   'use strict';
   function isUndef(val) {
-    return val === void 0;
+    return val === function 0;
   }
   var audioContext;
   if (isUndef(window.AudioContext)) {
@@ -3626,7 +3626,7 @@ oscillator = function () {
    *  Set the phase of an oscillator between 0.0 and 1.0
    *  
    *  @method  phase
-   *  @param  {Number} phase float between 0.0 and 1.0
+   *  @param  {Number} phase var between 0.0 and 1.0
    */
   p5.Oscillator.prototype.phase = function (p) {
     if (!this.dNode) {
@@ -4760,7 +4760,7 @@ audioin = function () {
    *    audioGrab = new p5.AudioIn();
    *    
    *    audioGrab.getSources(function(sourceList) {
-   *      //print out the array of available sources
+   *      //prvar out the array of available sources
    *      console.log(sourceList);
    *      //set the source to the first item in the inputSources array
    *      audioGrab.setSource(0);
@@ -5226,7 +5226,7 @@ delay = function () {
   };
   /**
    *  Set the delay (echo) time, in seconds. Usually this value will be
-   *  a floating point number between 0.0 and 1.0.
+   *  a floating povar number between 0.0 and 1.0.
    *
    *  @method  delayTime
    *  @param {Number} delayTime Time (in seconds) of the delay

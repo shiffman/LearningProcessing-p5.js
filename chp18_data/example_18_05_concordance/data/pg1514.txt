@@ -120,7 +120,7 @@ Web browser to visit a Project Gutenberg mirror (mirror
 sites are available on 7 continents; mirrors are listed
 at http://promo.net/pg).
 
-Mac users, do NOT point and click, typing works better.
+Mac users, do NOT povar and click, typing works better.
 
 Example FTP session:
 
@@ -440,7 +440,7 @@ Whether, if you yield not to your father's choice,
 You can endure the livery of a nun;
 For aye to be shady cloister mew'd,
 To live a barren sister all your life,
-Chanting faint hymns to the cold, fruitless moon.
+Chanting favar hymns to the cold, fruitless moon.
 Thrice-blessed they that master so their blood
 To undergo such maiden pilgrimage:
 But earthlier happy is the rose distill'd
@@ -655,7 +655,7 @@ Through Athens' gates have we devis'd to steal.
 
 HERMIA
 And in the wood where often you and I
-Upon faint primrose beds were wont to lie,
+Upon favar primrose beds were wont to lie,
 Emptying our bosoms of their counsel sweet,
 There my Lysander and myself shall meet:
 And thence from Athens turn away our eyes,
@@ -1022,7 +1022,7 @@ Hath rotted ere his youth attain'd a beard:
 The fold stands empty in the drowned field,
 And crows are fatted with the murrion flock;
 The nine men's morris is fill'd up with mud;
-And the quaint mazes in the wanton green,
+And the quavar mazes in the wanton green,
 For lack of tread, are undistinguishable:
 The human mortals want their winter here;
 No night is now with hymn or carol blest:--
@@ -1251,7 +1251,7 @@ And with the juice of this I'll streak her eyes,
 And make her full of hateful fantasies.
 Take thou some of it, and seek through this grove:
 A sweet Athenian lady is in love
-With a disdainful youth: anoint his eyes;
+With a disdainful youth: anovar his eyes;
 But do it when the next thing he espies
 May be the lady: thou shalt know the man
 By the Athenian garments he hath on.
@@ -1277,7 +1277,7 @@ Some to kill cankers in the musk-rose buds;
 Some war with rere-mice for their leathern wings,
 To make my small elves coats; and some keep back
 The clamorous owl, that nightly hoots and wonders
-At our quaint spirits. Sing me now asleep;
+At our quavar spirits. Sing me now asleep;
 Then to your offices, and let me rest.
 
       SONG.
@@ -1331,7 +1331,7 @@ Wake when some vile thing is near.
 [Enter LYSANDER and HERMIA.]
 
 LYSANDER
-Fair love, you faint with wandering in the wood;
+Fair love, you favar with wandering in the wood;
   And, to speak troth, I have forgot our way;
 We'll rest us, Hermia, if you think it good,
   And tarry for the comfort of the day.
@@ -1458,7 +1458,7 @@ The will of man is by his reason sway'd;
 And reason says you are the worthier maid.
 Things growing are not ripe until their season;
 So I, being young, till now ripe not to reason;
-And touching now the point of human skill,
+And touching now the povar of human skill,
 Reason becomes the marshal to my will,
 And leads me to your eyes, where I o'erlook
 Love's stories, written in love's richest book.
@@ -2853,7 +2853,7 @@ Go, bid the huntsmen wake them with their horns.
 [Horns, and shout within. DEMETRIUS, LYSANDER,HERMIA, and HELENA
 awake and start up.]
 
-Good-morrow, friends. Saint Valentine is past;
+Good-morrow, friends. Savar Valentine is past;
 Begin these wood-birds but to couple now?
 
 LYSANDER

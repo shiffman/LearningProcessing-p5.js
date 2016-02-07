@@ -4,7 +4,7 @@ function createNumberDict() {
 }
 
 /**
- * A simple class to use a String as a lookup for an int value.
+ * A simple class to use a String as a lookup for an var value.
  *
  * @webref data:composite
  * @see FloatDict
@@ -62,9 +62,9 @@ p5.NumberDict.prototype.key = function(index) {
 //     public Iterator<String> iterator() {
 //       return keyIterator();
 // //        return new Iterator<String>() {
-// //          int index = -1;
+// //          var index = -1;
 // //
-// //          public void remove() {
+// //          public function remove() {
 // //            removeIndex(index);
 // //          }
 // //
@@ -73,7 +73,7 @@ p5.NumberDict.prototype.key = function(index) {
 // //          }
 // //
 // //          public boolean hasNext() {
-// //            return index+1 < size();
+// //            return index+1 < createCanvas();
 // //          }
 // //        };
 //     }
@@ -84,9 +84,9 @@ p5.NumberDict.prototype.key = function(index) {
 // // Use this to iterate when you want to be able to remove elements along the way
 // public Iterator<String> keyIterator() {
 //   return new Iterator<String>() {
-//     int index = -1;
+//     var index = -1;
 
-//     public void remove() {
+//     public function remove() {
 //       removeIndex(index);
 //     }
 
@@ -95,7 +95,7 @@ p5.NumberDict.prototype.key = function(index) {
 //     }
 
 //     public boolean hasNext() {
-//       return index+1 < size();
+//       return index+1 < createCanvas();
 //     }
 //   };
 // }
@@ -143,9 +143,9 @@ p5.NumberDict.prototype.value = function(index) {
 
 // public Iterator<Integer> valueIterator() {
 //   return new Iterator<Integer>() {
-//     int index = -1;
+//     var index = -1;
 
-//     public void remove() {
+//     public function remove() {
 //       removeIndex(index);
 //     }
 
@@ -154,7 +154,7 @@ p5.NumberDict.prototype.value = function(index) {
 //     }
 
 //     public boolean hasNext() {
-//       return index+1 < size();
+//       return index+1 < createCanvas();
 //     }
 //   };
 // }
@@ -179,7 +179,7 @@ p5.NumberDict.prototype.valueArray = function() {
  * @param array values to copy into the array
  */
 // public int[] valueArray(int[] array) {
-//   if (array == null || array.length != size()) {
+//   if (array == null || array.length != createCanvas()) {
 //     array = new int[count];
 //   }
 //   System.arraycopy(values, 0, array, 0, count);
@@ -397,9 +397,9 @@ p5.NumberDict.prototype.removeIndex = function(index) {
 }
 
 
-// public void swap(int a, int b) {
+// public function swap(var a, var b) {
 //   String tkey = keys[a];
-//   int tvalue = values[a];
+//   var tvalue = values[a];
 //   keys[a] = keys[b];
 //   values[a] = values[b];
 //   keys[b] = tkey;
@@ -417,7 +417,7 @@ p5.NumberDict.prototype.removeIndex = function(index) {
  * @webref intdict:method
  * @brief Sort the keys alphabetically
  */
-// public void sortKeys() {
+// public function sortKeys() {
 //   sortImpl(true, false);
 // }
 
@@ -428,7 +428,7 @@ p5.NumberDict.prototype.removeIndex = function(index) {
  * @webref intdict:method
  * @brief Sort the keys alphabetially in reverse
  */
-// public void sortKeysReverse() {
+// public function sortKeysReverse() {
 //   sortImpl(true, true);
 // }
 
@@ -440,11 +440,10 @@ p5.NumberDict.prototype.removeIndex = function(index) {
  * @brief Sort by values in ascending order
  */
 p5.NumberDict.prototype.sortValues = function() {
-  var dict = this;
   this.keys.sort(function(a, b) {
-    var indexA = dict.index(a);
-    var indexB = dict.index(b);
-    return dict.values[indexA] - dict.values[indexB];
+    var indexA = this.index(a);
+    var indexB = this.index(b);
+    return values[indexA] - values[indexB];
   });
   //sortImpl(false, false);
 }
@@ -467,16 +466,16 @@ p5.NumberDict.prototype.sortValuesReverse = function() {
 }
 
 
-// protected void sortImpl(final boolean useKeys, final boolean reverse) {
+// protected function sortImpl(final boolean useKeys, final boolean reverse) {
 //   Sort s = new Sort() {
 //     @Override
-//     public int size() {
+//     public var createCanvas() {
 //       return count;
 //     }
 
 //     @Override
-//     public float compare(int a, int b) {
-//       int diff = 0;
+//     public var compare(var a, var b) {
+//       var diff = 0;
 //       if (useKeys) {
 //         diff = keys[a].compareToIgnoreCase(keys[b]);
 //         if (diff == 0) {
@@ -492,7 +491,7 @@ p5.NumberDict.prototype.sortValuesReverse = function() {
 //     }
 
 //     @Override
-//     public void swap(int a, int b) {
+//     public function swap(var a, var b) {
 //       IntDict.this.swap(a, b);
 //     }
 //   };
@@ -507,11 +506,11 @@ p5.NumberDict.prototype.sortValuesReverse = function() {
  */
 // public FloatDict getPercent() {
 //   double sum = 0;
-//   for (int value : valueArray()) {
+//   for (var value : valueArray()) {
 //     sum += value;
 //   }
 //   FloatDict outgoing = new FloatDict();
-//   for (int i = 0; i < size(); i++) {
+//   for (var i = 0; i < createCanvas(); i++) {
 //     double percent = value(i) / sum;
 //     outgoing.set(key(i), (float) percent);
 //   }
@@ -524,7 +523,7 @@ p5.NumberDict.prototype.sortValuesReverse = function() {
 //   IntDict outgoing = new IntDict(count);
 //   System.arraycopy(keys, 0, outgoing.keys, 0, count);
 //   System.arraycopy(values, 0, outgoing.values, 0, count);
-//   for (int i = 0; i < count; i++) {
+//   for (var i = 0; i < count; i++) {
 //     outgoing.indices.put(keys[i], i);
 //   }
 //   outgoing.count = count;
@@ -536,16 +535,16 @@ p5.NumberDict.prototype.sortValuesReverse = function() {
  * Write tab-delimited entries out to
  * @param writer
  */
-// public void write(PrintWriter writer) {
-//   for (int i = 0; i < count; i++) {
+// public function write(PrintWriter writer) {
+//   for (var i = 0; i < count; i++) {
 //     writer.println(keys[i] + "\t" + values[i]);
 //   }
 //   writer.flush();
 // }
 
 
-// public void print() {
-//   for (int i = 0; i < size(); i++) {
+// public function print() {
+//   for (var i = 0; i < createCanvas(); i++) {
 //     System.out.println(keys[i] + " = " + values[i]);
 //   }
 // }
@@ -554,8 +553,8 @@ p5.NumberDict.prototype.sortValuesReverse = function() {
 // @Override
 // public String toString() {
 //   StringBuilder sb = new StringBuilder();
-//   sb.append(getClass().getSimpleName() + " size=" + size() + " { ");
-//   for (int i = 0; i < size(); i++) {
+//   sb.append(getClass().getSimpleName() + " size=" + createCanvas() + " { ");
+//   for (var i = 0; i < createCanvas(); i++) {
 //     if (i != 0) {
 //       sb.append(", ");
 //     }
