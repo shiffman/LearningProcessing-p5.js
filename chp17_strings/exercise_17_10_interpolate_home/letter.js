@@ -8,7 +8,7 @@ function Letter(x, y, letter) {
   this.homex = this.x = x;
   this.homey = this.y = y;
   this.letter = letter;
-  this.theta = random(TWO_PI);
+  this.theta = 0;
 
   // Display the letter
   this.display = function() {
