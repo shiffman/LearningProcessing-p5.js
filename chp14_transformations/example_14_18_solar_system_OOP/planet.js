@@ -4,25 +4,27 @@
 
 // Example 14-18: Object-oriented solar system
 
-function Planet(tempDistance, tempDiameter) {
-  // Each planet object keeps track of its own angle of rotation.
-  this.theta = 0;                       // Rotation around sun
-  this.diameter = tempDiameter;         // Size of planet
-  this.distance = tempDistance;         // Distance from sun
-  this.orbitspeed = random(0.01, 0.03); // Orbit speed
+class Planet {
+  constructor(tempDistance, tempDiameter) {
+    // Each planet object keeps track of its own angle of rotation.
+    this.theta = 0;                       // Rotation around sun
+    this.diameter = tempDiameter;         // Size of planet
+    this.distance = tempDistance;         // Distance from sun
+    this.orbitspeed = random(0.01, 0.03); // Orbit speed
+  }
 
-  this.update = function() {
+  update() {
     // Increment the angle to rotate
     this.theta += this.orbitspeed;
   }
 
-  this.display = function() {
+  display() {
     // Before rotation and translation, the state of the matrix is saved with push().
-    push(); 
+    push();
     // Rotate orbit
-    rotate(this.theta); 
+    rotate(this.theta);
     // Translate out distance
-    translate(this.distance, 0); 
+    translate(this.distance, 0);
     stroke(0);
     fill(175);
     ellipse(0, 0, this.diameter, this.diameter);
@@ -30,4 +32,3 @@ function Planet(tempDistance, tempDiameter) {
     pop();
   }
 }
-
