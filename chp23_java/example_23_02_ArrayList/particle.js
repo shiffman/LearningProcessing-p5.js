@@ -6,22 +6,24 @@
 
 // A simple Particle class
 
-function Particle() {
-  this.x = mouseX;
-  this.y = mouseY;
-  this.xspeed = random(-1, 1);
-  this.yspeed = random(-2, 0);
-  
-  this.run = function() {
+class Particle {
+  constructor() {
+    this.x = mouseX;
+    this.y = mouseY;
+    this.xspeed = random(-1, 1);
+    this.yspeed = random(-2, 0);
+  }
+
+  run() {
     this.x = this.x + this.xspeed;
     this.y = this.y + this.yspeed;
   }
-  
-  this.gravity = function() {
+
+  gravity() {
     this.yspeed += 0.1;
   }
-  
-  this.display = function() {
+
+  display() {
     stroke(0);
     fill(0, 75);
     ellipse(this.x, this.y, 10, 10);
