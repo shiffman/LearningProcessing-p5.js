@@ -4,7 +4,7 @@
 
 // Example 8-1: A Car class and a Car object
 
-var car; // Declare car object as a globle variable.
+var car; // Declare car object as a global variable.
 
 function setup() {
   createCanvas(480, 270);
@@ -27,7 +27,7 @@ function setup() {
       if (this.xpos > width) {
         this.xpos = 0;
       }
-    }    
+    }
   };
 }
 
