@@ -5,13 +5,15 @@
 // Exercise 9-7: Snake Class
 
 // The constructor determines the length of the snake
-function Snake(n) {
+class Snake {
+  constructor(n) {
     // points array
     this.points = [];
     // how many points should we track?
     this.maxPoints = n;
+  }
 
-  this.update = function(newX, newY) {
+  update(newX, newY) {
     // New location
     var point = {
       x: newX,
@@ -24,14 +26,14 @@ function Snake(n) {
     }
   }
 
-  this.display = function() {
+  display() {
     // Draw everything
     for (var i = 0; i < this.points.length; i++) {
-      // Draw an ellipse for each element in the arrays. 
+      // Draw an ellipse for each element in the arrays.
       // Color and size are tied to the loop's counter: i.
       stroke(0);
       fill(255-i*5);
-      ellipse(this.points[i].x,this.points[i].y,i,i); 
+      ellipse(this.points[i].x,this.points[i].y,i,i);
     }
   }
 }
