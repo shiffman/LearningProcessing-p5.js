@@ -10,7 +10,7 @@ var car2; // Two objects!
 function setup() {
   createCanvas(480, 270);
   car1 = new Car(color(127),0,100,2); // Parameters go inside the parentheses when the object is constructed.
-  car2 = new Car(color(175),0,300,1); // Ypos 300, so off screen - canvas is only 270 tall!
+  car2 = new Car(color(175),0,200,1); 
 }
 
 function draw() {
