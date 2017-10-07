@@ -7,11 +7,11 @@
 
 // Child class constructor
 class Circle extends Shape { // Inherit from the parent class with 'extends'
-    constructor(x, y, r, c) {
-        // Inherits all instance variables from parent + adding one
-        super(x, y, r);
-        this.c = c;
-    }
+  constructor(x, y, r, c) {
+    // Inherits all instance variables from parent + adding one
+    super(x, y, r);
+    this.c = c;
+  }
 
   // Call the parent jiggle, but do some more stuff too
   jiggle() {

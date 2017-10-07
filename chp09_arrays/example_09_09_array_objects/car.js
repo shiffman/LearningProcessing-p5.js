@@ -7,24 +7,24 @@
 // Even though there are multiple objects, we still only need one constructor function.
 // No matter how many cookies we make, only one cookie cutter is needed.Isn’t object-oriented programming swell?
 class Car {
-    constructor(tempC, tempXpos, tempYpos, tempXspeed) { // The Constructor is defined with arguments.
-        this.c = tempC;
-        this.xpos = tempXpos;
-        this.ypos = tempYpos;
-        this.xspeed = tempXspeed;
-    }
+  constructor(tempC, tempXpos, tempYpos, tempXspeed) { // The Constructor is defined with arguments.
+    this.c = tempC;
+    this.xpos = tempXpos;
+    this.ypos = tempYpos;
+    this.xspeed = tempXspeed;
+  }
 
-    display() {
-        stroke(0);
-        fill(this.c);
-        rectMode(CENTER);
-        rect(this.xpos,this.ypos,20,10);
-    }
+  display() {
+    stroke(0);
+    fill(this.c);
+    rectMode(CENTER);
+    rect(this.xpos,this.ypos,20,10);
+  }
 
-    move() {
-        this.xpos = this.xpos + this.xspeed;
-        if (this.xpos > width) {
-            this.xpos = 0;
-        }
+  move() {
+    this.xpos = this.xpos + this.xspeed;
+    if (this.xpos > width) {
+      this.xpos = 0;
     }
+  }
 }

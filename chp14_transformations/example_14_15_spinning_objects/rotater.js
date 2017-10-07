@@ -12,7 +12,6 @@ class Rotater {
     this.theta = 0;           // angle of rotation (always initialized to 0)
     this.speed = tempSpeed;   // speed of rotation
     this.w = tempW;           // size of rectangle
-
   }
 
   // Increment angle
