@@ -1,23 +1,25 @@
 
-function Bubble(x, y, diameter, s) {
-  this.x = Number(x);
-  this.y = Number(y);
-  this.diameter = Number(diameter);
-  this.name = s;
-  this.over = false;
+class Bubble {
+  constructor(x, y, diameter, s) {
+    this.x = Number(x);
+    this.y = Number(y);
+    this.diameter = Number(diameter);
+    this.name = s;
+    this.over = false;
+  }
 
   // Checking if mouse is over the Bubble
-  this.rollover = function(px, py) {
+  rollover(px, py) {
     var d = dist(px, py, this.x, this.y);
-    if (d < diameter/2) {
-      this.over = true; 
+    if (d < this.diameter/2) {
+      this.over = true;
     } else {
       this.over = false;
     }
   }
-  
+
   // Display the Bubble
-  this.display = function() {
+  display() {
     stroke(0);
     strokeWeight(2);
     noFill();

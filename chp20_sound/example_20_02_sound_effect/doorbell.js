@@ -5,14 +5,16 @@
 // Example 20-2: Doorbell with Sonia
 
 // Create the doorbell
-function Doorbell(x, y, r) {
+class Doorbell {
+  constructor(x, y, r) {
     this.x = x;
     this.y = y;
     this.r = r;
+  }
 
   // Is a point inside the doorbell? (used for mouse rollover, etc.)
-  this.contains = function(mx, my) {
-    if (dist(mx, my, this.x, this.y) < r) {
+  contains(mx, my) {
+    if (dist(mx, my, this.x, this.y) < this.r) {
       return true;
     } else {
       return false;
@@ -20,7 +22,7 @@ function Doorbell(x, y, r) {
   }
 
   // Show the doorbell (hardcoded colors, could be improved)
-  this.display = function(mx, my) {
+  display(mx, my) {
     if (this.contains(mx, my)) {
       fill(100);
     } else {
@@ -31,4 +33,3 @@ function Doorbell(x, y, r) {
     ellipse(this.x, this.y, this.r, this.r);
   }
 }
-

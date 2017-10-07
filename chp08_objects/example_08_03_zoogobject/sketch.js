@@ -18,17 +18,19 @@ function draw() {
   zoog.display();
 }
 
-// Zoog constructor
-function Zoog(tempX, tempY, tempW, tempH, tempEyeSize) {
-  // Zoog's variables
-  this.x = tempX;
-  this.y = tempY;
-  this.w = tempW;
-  this.h = tempH;
-  this.eyeSize = tempEyeSize;
+// Zoog class
+class Zoog {
+  // Zoog constructor
+  constructor(tempX, tempY, tempW, tempH, tempEyeSize) {
+    this.x = tempX;
+    this.y = tempY;
+    this.w = tempW;
+    this.h = tempH;
+    this.eyeSize = tempEyeSize;
+  }
 
   // Move Zoog
-  this.jiggle = function(speed) {
+  jiggle(speed) {
     // Change the location of Zoog randomly
     this.x = this.x + random(-1,1)*speed;
     this.y = this.y + random(-1,1)*speed;
@@ -36,9 +38,9 @@ function Zoog(tempX, tempY, tempW, tempH, tempEyeSize) {
     this.x = constrain(this.x,0,width);
     this.y = constrain(this.y,0,height);
   }
-  
+
   // Display Zoog
-  this.display = function() {
+  display() {
     // Set ellipses and rects to CENTER mode
     ellipseMode(CENTER);
     rectMode(CENTER);
@@ -65,6 +67,3 @@ function Zoog(tempX, tempY, tempW, tempH, tempEyeSize) {
     line(this.x + this.w/12,this.y + this.h/2,this.x + this.w/4,this.y + this.h/2 + 10);
   }
 }
-
-
-

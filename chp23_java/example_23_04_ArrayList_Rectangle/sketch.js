@@ -36,7 +36,7 @@ function draw() {
     particles[i].display();
 
     // If the Rectangle contains the location of the Particle, stop the Particle from moving.
-    if (blackhole.contains(particles[i].x, particles[i].y)) { 
+    if (blackhole.contains(particles[i].x, particles[i].y)) {
       particles[i].stop();
     }
 
@@ -47,13 +47,15 @@ function draw() {
   }
 }
 
-function Rectangle(x, y, w, h) {
-  this.x = x;
-  this.y = y;
-  this.width = w;
-  this.height = h;
+class Rectangle {
+  constructor(x, y, w, h) {
+    this.x = x;
+    this.y = y;
+    this.width = w;
+    this.height = h;
+  }
 
-  this.contains = function(x, y) {
+  contains(x, y) {
     return (x > this.x && x < this.x + this.width &&
             y > this.y && y < this.y + this.height);
   }

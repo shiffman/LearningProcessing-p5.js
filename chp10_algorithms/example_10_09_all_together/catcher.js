@@ -4,17 +4,19 @@
 
 // Example 10-1: Catcher
 
-function Catcher(tempR) {
-  this.r = tempR; // radius
-  this.x = 0;     // location
-  this.y = 0;
+class Catcher {
+  constructor(tempR) {
+    this.r = tempR; // radius
+    this.x = 0;     // location
+    this.y = 0;
+  }
 
-  this.setLocation = function(tempX, tempY) {
+  setLocation(tempX, tempY) {
     this.x = tempX;
     this.y = tempY;
   }
 
-  this.display = function() {
+  display() {
     stroke(0);
     fill(175);
     ellipse(this.x, this.y, this.r*2, this.r*2);

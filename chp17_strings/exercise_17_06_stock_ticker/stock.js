@@ -2,41 +2,42 @@
 // Daniel Shiffman
 // http://www.learningprocessing.com
 
-// Exercise 17-6: Stock Ticker 
+// Exercise 17-6: Stock Ticker
 
 // A class to describe a stock quote
-  
-  function Stock(n, v) {
+
+class Stock {
+  constructor(n, v) {
     this.name = n;
     this.val = v;
     // Concatenate the name, value and some spaces
     this.displayTxt = this.name + " " + this.val + "   ";
-  
-  
+  }
+
+
   // A function to set x position
-  this.setX = function(x_) {
+  setX(x_) {
     this.x = x_;
   }
-  
+
   // Scroll the quote and reset it when it gets far enough offscreen
-  this.move = function() {
+  move() {
     this.x = this.x - 1;
     if (this.x < width - totalW) {
       this.x = width;
-    } 
+    }
   }
 
   // Display the quote
-  this.display = function() {
+  display() {
     textAlign(LEFT);
     fill(0);
     noStroke();
-    text(this.displayTxt, this.x, height-10); 
+    text(this.displayTxt, this.x, height-10);
   }
-  
+
   // Return the width of the quote
-  this.textW = function() {
-    return textWidth(this.displayTxt); 
+  textW() {
+    return textWidth(this.displayTxt);
   }
 }
-

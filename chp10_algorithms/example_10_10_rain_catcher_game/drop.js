@@ -4,23 +4,25 @@
 
 // Example 10-10: The raindrop catching game
 
-function Drop() {
-  this.r = 8;                 // All raindrops are the same size
-  this.x = random(width);     // Start with a random x location
-  this.y = -this.r*4;              // Start a little above the window
-  this.speed = random(1, 5);   // Pick a random speed
-  this.c = color(50, 100, 150); // Color
+class Drop {
+  constructor() {
+    this.r = 8;                 // All raindrops are the same size
+    this.x = random(width);     // Start with a random x location
+    this.y = -this.r*4;              // Start a little above the window
+    this.speed = random(1, 5);   // Pick a random speed
+    this.c = color(50, 100, 150); // Color
+  }
 
   // Move the raindrop down
-  this.move = function() {
+  move() {
     // Increment by speed
     this.y += this.speed;
   }
 
   // Check if it hits the bottom
-  this.reachedBottom = function() {
+  reachedBottom() {
     // If we go a little beyond the bottom
-    if (this.y > height + this.r*4) { 
+    if (this.y > height + this.r*4) {
       return true;
     } else {
       return false;
@@ -28,7 +30,7 @@ function Drop() {
   }
 
   // Display the raindrop
-  this.display = function() {
+  display() {
     // Display the drop
     fill(this.c);
     noStroke();
@@ -39,11 +41,10 @@ function Drop() {
   }
 
   // If the drop is caught
-  this.caught = function() {
+  caught() {
     // Stop it from moving by setting speed equal to zero
-    this.speed = 0; 
+    this.speed = 0;
     // Set the location to somewhere way off-screen
     this.y = -1000;
   }
 }
-

@@ -5,15 +5,17 @@
 // Example 10-3: Bouncing ball with intersection
 
 // Constructor
-function Ball(tempR) {
-  this.r = tempR;              // radius
-  this.x = random(width);      // location
-  this.y = random(height);
-  this.xspeed = random(-5, 5); // speed
-  this.yspeed = random(-5, 5);
-  this.c = color(100, 50);
+class Ball {
+  constructor(tempR) {
+    this.r = tempR;              // radius
+    this.x = random(width);      // location
+    this.y = random(height);
+    this.xspeed = random(-5, 5); // speed
+    this.yspeed = random(-5, 5);
+    this.c = color(100, 50);
+  }
 
-  this.move = function() {
+  move() {
     this.x += this.xspeed; // Increment x
     this.y += this.yspeed; // Increment y
 
@@ -28,7 +30,7 @@ function Ball(tempR) {
   }
 
   // Draw the ball
-  this.display = function() {
+  display() {
     stroke(0);
     fill(this.c);
     ellipse(this.x, this.y, this.r*2, this.r*2);
@@ -36,17 +38,16 @@ function Ball(tempR) {
     this.c = color(100, 50);
   }
 
-  // Whenever the balls are touching, this highlight() function is called 
+  // Whenever the balls are touching, this highlight() function is called
   // and the color is darkened.
-  this.highlight = function() { 
+  highlight() {
     this.c = color(0, 150);
   }
-  
+
   // A function that returns true or false based on whether two circles intersect
   // If distance is less than the sum of radii the circles touch
-  this.intersect = function(b) {
-
-    // Objects can be passed into functions as arguments too! 
+  intersect(b) {
+    // Objects can be passed into functions as arguments too!
     var distance = dist(this.x, this.y, b.x, b.y); // Calculate distance
 
     // Compare distance to sum of radii
@@ -57,4 +58,3 @@ function Ball(tempR) {
     }
   }
 }
-

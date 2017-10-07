@@ -5,14 +5,16 @@
 // Example 10-2: Bouncing ball class
 
 // Constructor
-function Ball(tempR) {
-  this.r = tempR;              // radius
-  this.x = random(width);      // location
-  this.y = random(height);
-  this.xspeed = random(-5, 5); // speed
-  this.yspeed = random(-5, 5);
+class Ball {
+  constructor(tempR) {
+    this.r = tempR;              // radius
+    this.x = random(width);      // location
+    this.y = random(height);
+    this.xspeed = random(-5, 5); // speed
+    this.yspeed = random(-5, 5);
+  }
 
-  this.move = function() {
+  move() {
     this.x += this.xspeed; // Increment x
     this.y += this.yspeed; // Increment y
 
@@ -27,10 +29,9 @@ function Ball(tempR) {
   }
 
   // Draw the ball
-  this.display = function() {
+  display() {
     stroke(0);
     fill(0, 50);
     ellipse(this.x, this.y, this.r*2, this.r*2);
   }
 }
-
