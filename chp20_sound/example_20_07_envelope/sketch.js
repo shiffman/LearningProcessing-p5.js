@@ -8,7 +8,7 @@ var osc;
 
 var envelope;
 
-var scale = [
+var notes = [
   60, 62, 64, 65, 67, 69, 71, 72
 ]; 
 
@@ -26,9 +26,9 @@ function setup() {
 function draw() {
   if (frameCount % 60 == 0) {
     // Not right?
-    osc.freq(translateMIDI(scale[note]));
+    osc.freq(translateMIDI(notes[note]));
     envelope.play(osc);
-    note = (note + 1) % scale.length;
+    note = (note + 1) % notes.length;
   }
 }
 
